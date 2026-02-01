@@ -13,5 +13,12 @@ Puedes instalar la versión de desarrollo desde GitHub usando el paquete `remote
 install.packages("remotes")
 remotes::install_github("diegodduartebb/ColombiaGrid")
 
-La función principal es colombia_grid()
-Para ver la documentación respectiva de
+## Uso
+
+La función principal es:
+```r
+colombia_grid()
+
+Para ver la documentación respectiva de la función por favor visualizar:
+```r
+help("colombia_grid")
