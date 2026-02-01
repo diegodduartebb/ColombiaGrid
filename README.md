@@ -11,7 +11,7 @@ Puedes instalar la versión de desarrollo desde GitHub usando el paquete `remote
 
 ```r
 install.packages("remotes")
-remotes::install_github("diegodduartebb/ColombiaGrid")
+remotes::install_github("diegodduartebb/ColombiaGrid") ```
 
 ## Uso
 
