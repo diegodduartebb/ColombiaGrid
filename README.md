@@ -11,14 +11,27 @@ Puedes instalar la versión de desarrollo desde GitHub usando el paquete `remote
 
 ```r
 install.packages("remotes")
-remotes::install_github("diegodduartebb/ColombiaGrid") ```
+remotes::install_github("diegodduartebb/ColombiaGrid") 
+```
 
 ## Uso
 
 La función principal es:
 ```r
 colombia_grid()
+```
 
 Para ver la documentación respectiva de la función por favor visualizar:
 ```r
 help("colombia_grid")
+```
+
+El paquete devuelve un objeto ggplot2, por lo que puedes seguir añadiendo capas o modificando el tema. Ej:
+```r
+colombia_grid(mis_datos, "codigo", "valor") +
+  theme(legend.position = "top") +
+  labs(caption = "Fuente: Datos simulados 2024")
+```
+
+## Ejemplos
+
