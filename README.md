@@ -54,6 +54,8 @@ ggsave(
 
 ## Ejemplos
 
+Para un mapa con datos continuos:
+
 ```r
 colombia_grid(
   data = datos_conectividad,
@@ -71,6 +73,8 @@ colombia_grid(
 ```
 
 ![Mapa1](man/figures/image1.png)
+
+Para un mapa con datos discretos:
 
 ```r
 colombia_grid(
