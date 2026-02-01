@@ -54,6 +54,6 @@ ggsave(
 
 ## Ejemplos
 
-![Mapa1](man/figures/image.png)
+![Mapa1](man/figures/image1.png)
 
 ![Mapa2](man/figures/image2.png)
