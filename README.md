@@ -7,7 +7,7 @@ A diferencia de los mapas coropléticos tradicionales (geográficos), este tipo 
 
 ## Instalación
 
-Puedes instalar la versión de desarrollo desde GitHub usando el paquete `remotes`:
+Puede instalar la versión de desarrollo desde GitHub usando el paquete `remotes`:
 
 ```r
 install.packages("remotes")
@@ -26,7 +26,7 @@ Para ver la documentación por favor visualizar:
 help("colombia_grid")
 ```
 
-Tip: El paquete devuelve un objeto ggplot2, por lo que puedes seguir añadiendo capas o modificando el tema. Ej:
+Tip: El paquete devuelve un objeto ggplot2, por lo que se puede seguir añadiendo capas o modificando el tema. Ej:
 ```r
 colombia_grid(mis_datos, "codigo", "valor") +
   theme(legend.position = "top") +
