@@ -21,17 +21,39 @@ La función principal es:
 colombia_grid()
 ```
 
-Para ver la documentación respectiva de la función por favor visualizar:
+Para ver la documentación por favor visualizar:
 ```r
 help("colombia_grid")
 ```
 
-El paquete devuelve un objeto ggplot2, por lo que puedes seguir añadiendo capas o modificando el tema. Ej:
+Tip: El paquete devuelve un objeto ggplot2, por lo que puedes seguir añadiendo capas o modificando el tema. Ej:
 ```r
 colombia_grid(mis_datos, "codigo", "valor") +
   theme(legend.position = "top") +
   labs(caption = "Fuente: Datos simulados 2024")
 ```
 
+Para exportar los mapas generados a un png (o a cualquier formato) lo puede hacer así. Ej:
+```r
+mi_mapa <- colombia_grid(
+  data = mis_datos, 
+  value_col = "tasa",
+  title = "Mapa de Alta Resolución"
+)
+
+ggsave(
+  filename = "mapa_hd.png", # Nombre del archivo
+  plot = mi_mapa,           # El objeto que creaste
+  width = 10,               # Ancho
+  height = 12,              # Alto
+  units = "in",             # Unidades (pulgadas, cm, mm)
+  dpi = 300,                # Resulución
+  bg = "white"              # Fondo blanco (evita fondos transparentes por error)
+)
+```
+
 ## Ejemplos
 
+![Mapa1](man/figures/image.png)
+
+![Mapa2](man/figures/image2.png)
