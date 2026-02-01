@@ -54,6 +54,44 @@ ggsave(
 
 ## Ejemplos
 
+```r
+colombia_grid(
+  data = datos_conectividad,
+  id_col = "cod_dane",
+  value_col = "indice",
+  scale_type = "continuous",
+  title = "Índice de Conectividad Digital 2025",
+  subtitle = "Porcentaje de hogares con acceso a fibra óptica (Simulado)",
+  legend_title = "Cobertura (%)",
+  colors = c("#F0F9E8", "#08589E"),
+  text_family = "sans",
+  label_size = 1.8,
+  label_alpha = 0.7
+)
+```
+
 ![Mapa1](man/figures/image1.png)
+
+```r
+colombia_grid(
+  data = datos_riesgo,
+  id_col = "cod_dane",
+  value_col = "nivel",
+  scale_type = "discrete",
+  title = "Priorización de Inversión Pública",
+  subtitle = "Clasificación de municipios según Nivel de Necesidad",
+  legend_title = "Prioridad",
+  # Diccionario de colores manual (Semáforo de Alerta)
+  colors = c("Baja" = "#A1D99B",   # Verde suave
+             "Media" = "#FDAE61",  # Naranja
+             "Alta" = "#D7191C"),  # Rojo fuerte
+  show_labels = TRUE,
+  label_color = "black",
+  border_color = "white",
+  border_size = 0.2
+) +
+  # Como devuelve un ggplot, podemos mover la leyenda si queremos
+  theme(legend.position = "left")
+```
 
 ![Mapa2](man/figures/image2.png)
