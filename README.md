@@ -54,7 +54,7 @@ ggsave(
 
 ## Ejemplos
 
-Para un mapa con datos continuos:
+### Para un mapa con datos continuos:
 
 ```r
 colombia_grid(
@@ -74,7 +74,7 @@ colombia_grid(
 
 ![Mapa1](man/figures/image1.png)
 
-Para un mapa con datos discretos:
+### Para un mapa con datos discretos:
 
 ```r
 colombia_grid(
